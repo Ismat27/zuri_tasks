@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+.board {
+    display: grid;
+    grid-template: repeat(5, 1fr)/repeat(5, 1fr);
+    height: 250px;
+    width: 250px;
+    background-color: blanchedalmond;
+    margin: auto;
+}
+
+
+.player:nth-child(even) {
+    background-color: brown;
+}
