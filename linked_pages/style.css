@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    color: #21243D;
+}
+body {
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
+    font-family: 'Heebo', sans-serif;
+}
+.btn {
+    cursor: pointer;
+}
+.logo {
+    font-size: 40px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+main {
+    padding-block: 20px;
+}
+.header {
+    width: 90%;
+    /* max-width: 900px; */
+    margin: auto;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamburger {
+    display: grid;
+    place-items: center;
+    height: 30px;
+    width: 50px;
+}
+.bar {
+    display: block;
+    width: 30px;
+    border-bottom: 2px solid black;
+}
+.my-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+}
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 900px;
+    margin: auto;
+
+    align-items: center;
+}
+.hero-text {
+    text-align: center;
+    max-width: 500px;
+}
+.hero-text > h1 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+}
+.hero-img > img{
+    border-radius: 50%;
+    width: 243px;
+    height: 243px;
+}
+.my-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.my-skill {
+    border: 0.5px solid #21243D;
+    padding: 5px;
+}
+.action-btn {
+    background-color: #21243D;
+    color: #FFFFFF;
+    border-radius: 2px;
+    padding: 0.5rem 2rem;
+    transition: .4s;
+}
+.action-btn:hover {
+    background-color: #070707;
+    border: none;
+    color: #FFFFFF;
+}
+
+/* contact, registration and login pages */
+.form-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.fullname, .location {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+}
+.form-data {
+    margin-bottom: 10px;
+}
+input, textarea, select {
+    width: 100%;
+    display: block;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-block: 5px;
+    text-indent: 10px;
+    outline: none;
+}
+input[type='submit'] {
+    text-indent: 0;
+}
+input.full, textarea, select {
+    width: 100%;
+}
+ form {
+    border: 1px solid #21243D;
+    padding: 2rem;
+}
+form > h2 {
+    margin-top: 0;
+}
+@media screen and (min-width: 800px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hamburger {
+        display: none;
+    }
+    .nav-items {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        /* gap: 60px; */
+    }
+    .hero-text {
+        text-align: start;
+    }
+    .my-skills {
+        justify-content: start;
+    }
+}

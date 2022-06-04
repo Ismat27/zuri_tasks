@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Heebo:wght@200;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Sign up page</title>
+</head>
+<body>
+    <main class="form-container">
+        <form action="/index.html">
+            <h2>Fill this form to register</h2>
+            <div class="fullname">
+                <div class="firstname form-data">
+                    <label for="firstname">Firstname</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div class="lastname form-data">
+                    <label for="lastname">Lastname</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+            </div>
+            <div class="phone form-data">
+                <label for="phone">Phone Number</label>
+                <input class="full" type="phone" id="phone" placeholder="your phone number" required>
+            </div>
+            <div class="gender form-data">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" required>
+                    <option value="M">Male</option>
+                    <option value="M">Female</option>
+                </select>
+            </div>
+            <div class="location">
+                <div class="country form-data">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country" required>
+                </div>
+                <div class="state form-data">
+                    <label for="state">State/Province</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+            </div>
+            <div class="email form-data">
+                <label for="email">Email</label>
+                <input class="full" type="email" id="email" name="email" required>
+           </div>
+           <div class="password form-data">
+                <label for="password1">Password</label>
+                <input class="full" type="password" id="password1" required>
+           </div>
+            <div class="confirm-password form-data">
+                <label for="password2">Confirm Password</label>
+                <input class="full" type="password" id="password2" required>
+            </div>
+            <input class="action-btn btn" type="submit" value="Sign Up">
+        </form>
+    </main>
+</body>
+</html>
