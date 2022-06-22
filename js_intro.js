@@ -1,0 +1,1 @@
+console.log('name: Ismail\nheight: 165cm\ncountry: Nigeria')
